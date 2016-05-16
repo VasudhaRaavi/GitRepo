@@ -1,6 +1,9 @@
 public class AccountHandler {
+
 	// Creation of account New Account 123123123123
-    public static Account insertNewAccount(String accountName) {
+
+	// Creation of account 12 new acount
+public static Account insertNewAccount(String accountName) {
         try {
             Account acct = new Account(Name = accountName);
             insert acct;
