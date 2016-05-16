@@ -1,0 +1,32 @@
+<!-- <apex:page standardController="Account" recordSetVar="Accounts">
+    <apex:pageBlock>
+    You're looking at some related lists for {!account.name}:
+    </apex:pageBlock>
+
+    <apex:relatedList list="Opportunities" />
+
+    <apex:relatedList list="Contacts">
+        <apex:facet name="header">Titles can be overriden with facets</apex:facet>
+    </apex:relatedList>
+
+    <apex:relatedList list="Cases" title="Or you can keep the image, but change the text" />
+</apex:page> -->
+
+<apex:page standardController="Account" recordSetVar="Accounts" >
+    <apex:pageblock >
+        <apex:repeat var="a" value="{!Accounts}" rendered="true"  id="account_list">
+            <li>
+                <apex:outputLink value="/{!a.ID}" >
+                    <apex:outputText value="{!a.Name}"/>
+                </apex:outputLink>
+             <apex:relatedList list="Opportunities" />
+
+    <apex:relatedList list="Contacts">
+        <apex:facet name="header">Titles can be overriden with facets</apex:facet>
+    </apex:relatedList>
+
+    <apex:relatedList list="Cases" title="Or you can keep the image, but change the text" /> 
+            </li>
+        </apex:repeat>
+    </apex:pageblock>
+</apex:page>

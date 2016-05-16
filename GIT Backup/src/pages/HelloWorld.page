@@ -1,0 +1,13 @@
+<apex:page sidebar="false" showHeader="true">
+    <h1>Hello World</h1>
+    <apex:pageBlock title="A Block Title">
+    <apex:pageBlockSection title="A Section Title" collapsible="false">
+        I’m three components deep!
+        
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="A New Section">
+    	New Section is added.
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+</apex:page>
