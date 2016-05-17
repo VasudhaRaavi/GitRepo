@@ -1,7 +1,6 @@
 public class AccountHandler {
-
-	// Create new Account Vasudha
-public static Account insertNewAccount(String accountName) {
+    // Creation of account New Account is created
+    public static Account insertNewAccount(String accountName) {
         try {
             Account acct = new Account(Name = accountName);
             insert acct;
@@ -10,6 +9,6 @@ public static Account insertNewAccount(String accountName) {
         } 
         catch (DmlException e) {
             return null;
-    	}
-	}
+        }
+    }
 }
